@@ -3,6 +3,7 @@ vim.opt.title = true
 vim.opt.expandtab = true
 vim.opt.breakindent = true
 vim.opt.backspace = { 'start', 'eol', 'indent' }
+vim.opt.modifiable = true
 
 -- Включает улучшенные цветовые схемы
 vim.opt.termguicolors = true

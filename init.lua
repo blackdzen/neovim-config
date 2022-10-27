@@ -20,4 +20,8 @@ else
   require('plugins-configs/neosolarized')
   require('plugins-configs/lspcolors')
   require('plugins-configs/webicons')
+  require('plugins-configs/trouble')
+  require('plugins-configs/null-ls')
+  require('plugins-configs/prettier')
+  require('plugins-configs/autosave')
 end

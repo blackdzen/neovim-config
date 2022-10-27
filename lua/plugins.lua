@@ -26,6 +26,9 @@ return require('packer').startup(function(use)
   use 'hrsh7th/cmp-cmdline'
   use 'hrsh7th/nvim-cmp' 
   
+   --Подключаем prettier
+   use('jose-elias-alvarez/null-ls.nvim')
+   use('MunifTanjim/prettier.nvim')
 
   -- Подключаем плагины для сниппетов
   use 'L3MON4D3/LuaSnip'
@@ -73,6 +76,10 @@ return require('packer').startup(function(use)
   'nvim-lualine/lualine.nvim',
   requires = { 'kyazdani42/nvim-web-devicons', opt = true }
 }
+
+  -- Добавляем отображение списка ошибко
+use "folke/trouble.nvim"
+use "Pocco81/auto-save.nvim"
   
 end)
 
