@@ -10,6 +10,9 @@ local on_attach = function(client, bufnr)
     buf_set_keymap('n', 'gD', '<Cmd>lua vim.lsp.buf.declaration()<CR>', opts)
     buf_set_keymap('n', 'gi', '<cmd>lua vim.lsp.buf.implementation()<CR>', opts)
 
+    if client.server_capabilities.documentFormattingProvider then
+      vim.cmd("autocmd BufWritePost <buffer> lua vim.lsp.buf.format {async = true}")
+    end
 end
 
 --local capabilities = vim.lsp.protocol.make_client_capabilities()
