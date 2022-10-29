@@ -22,7 +22,8 @@ treesitter.setup {
     "swift",
     "css",
     "html",
-    "lua"
+    "lua",
+    "gitignore"
   },
 }
 
